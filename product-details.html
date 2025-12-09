@@ -14,13 +14,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Title</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
 
-          .banner2 {
+        .banner2 {
+            width: 100%;
             height: 20vh;
             background-image: url("Projectimges/banner.jpg");
             background-repeat: no-repeat;
@@ -39,7 +40,6 @@
 
         .banner2-content span {
             font-weight: 600;
-            font-weight: 00;
             font-size: 0.8rem;
         }
 
@@ -50,21 +50,35 @@
         }
 
         .poduct-descri {
-            /* width: 100%; */
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            /* align-content: center; */
-            /* justify-items: center; */
-            gap: 10px;
-            max-width: 1100px;
+            gap: 10%;
+            max-width: 1200px;
             margin: 0px auto;
             padding: 60px 20px;
         }
 
         @media (max-width:600px) {
             .poduct-descri {
+                gap: 50px;
+                align-content: center;
                 grid-template-columns: 1fr;
             }
+
+            .poduct-descri ul li {
+                font-size: 0.5rem;
+            }
+
+            .image {
+                width: 404px;
+            }
+            .count i{
+                width: 1%;
+
+            }
+
+            
+
         }
 
         @media (max-width:1080px) {
@@ -78,9 +92,23 @@
             }
         }
 
+        @media (max-width:950px) {
+            .image {
+                width: 320px;
+            }
+
+            .poduct-descri ul li {
+                font-size: 0.7rem;
+            }
+        }
+
         @media (max-width:800px) {
             .poduct-descri p {
                 font-size: 0.6rem;
+            }
+
+            .image {
+                width: 320px;
             }
         }
 
@@ -103,14 +131,9 @@
         }
 
         .decri {
-            margin: 0px 50px;
             width: 100%;
+            padding: 0 10px;
         }
-
-        /* .image img {
-            height: 850px;
-            width: 700px;
-        } */
 
         .text-area {
             display: flex;
@@ -131,7 +154,6 @@
         }
 
         .poduct-descri ul {
-
             margin-bottom: 20px;
         }
 
@@ -160,16 +182,17 @@
             color: #fff;
             width: 50%;
             padding: 8px 0;
-            margin-right: 8px;
+            margin-right: 4px;
             border: none;
 
         }
 
         .count i {
-            margin-right: 8px;
+            margin-right: 4px;
             color: #fff;
             width: 7%;
-            padding: 12px;
+            padding: 13px 9px;
+            font-size: 0.9rem;
             background-color: #F65D4E;
 
         }
@@ -204,7 +227,7 @@
             width: 8%;
             text-align: center;
             border: 1px solid black;
-            /* border-radius: 3px; */
+
         }
 
         .operator {
@@ -221,7 +244,6 @@
         }
 
         .operator i {
-
             margin-top: 1px;
             padding: 3.9px 15px 3.9px 6px;
             font-size: 0.6rem;
@@ -233,17 +255,16 @@
 
         .social {
             align-items: center;
-            /* color: #A83F38; */
             margin: 20px 0 40px 0;
             display: flex;
             justify-content: space-between
         }
 
-        .social h7 {
+        .social h7{
             font-size: 0.8rem;
         }
 
-        .socal h7 {
+        .socal h7{
             padding-right: 7px;
         }
 
@@ -256,28 +277,32 @@
             color: rgb(253, 157, 51);
         }
 
-        /* .image {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            align-content: center;
-            width: 100%;
-        } */
 
-        .imaga-fou {
-            /* padding: 20px 0; */
-
+        .image {
             display: flex;
-            flex-direction: column;
-            /* justify-content: center; */
-      
-
+            gap: 10px;
+            align-items: flex-start;
         }
 
-        /* .imaga-fou img {
-            height: 90px;
-            width: 110px;
-        } */
+        .small-images {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .s-img {
+            width: 80px;
+            height: 120px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 6px;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .s-img:hover {
+            border: 2px solid #1D1D1D;
+        }
     </style>
 </head>
 
@@ -289,7 +314,7 @@
             <a href="product.html">Page</a>
             <a href="">Categories</a>
             <a href="">About Us </a>
-            <a href="">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
 
         <div class="icon">
@@ -309,10 +334,15 @@
     <div class="poduct-descri container-fluid">
 
         <div class="image">
-            <div class="imaga-fou"></div>
-            <img src="Projectimges/image21.jpg" class="img-fluid" height="300px" alt="">
+            <div class="small-imges">
+                <img class="s-img" src="Projectimges/image1.jpg" data-full="Projectimges/image21.jpg" alt="">
+                <img class="s-img" src="Projectimges/simg1.jpg" data-full="Projectimges/bimg2.jpg" alt="">
+                <img class="s-img" src="Projectimges/simg2.jpg" data-full="Projectimges/bigimage3.jpg">
+            </div>
+            <img src="Projectimges/image21.jpg" class="img-fluid" height="400px" alt="">
         </div>
-        <div class="decri px-3">
+
+        <div class="decri ">
             <h2>The Classic Harry Potter Series</h2>
             <div class="text-area">
                 <p class="m-0 text-success">In Stock</p>
@@ -335,7 +365,7 @@
 
             </div>
             <p class="text-danger"><i class="fa-solid fa-fire pe-2 text-danger"></i>5 sold in last 24 hours</p>
-            <ul class="px-4">
+            <ul class="px-4 py-3">
                 <li>Lorem ipsum dolor sit amet consectetur Labore, provident?</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                 <li> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
@@ -361,7 +391,7 @@
                     <h7><i class="fa-brands fa-twitter"></i>Tweet</h7>
                     <h7><i class="fa-brands fa-google"></i>Google</h7>
                     <h7><i class="fa-brands fa-pinterest"></i>Pin it</h7>
-                    <h7><i class="fa-regular fa-envelope"></i>vEmail</h7>
+                    <h7><i class="fa-regular fa-envelope"></i>Email</h7>
                 </div>
             </div>
             <div class="par">

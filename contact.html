@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <title>Title</title>
@@ -20,43 +21,12 @@
             box-sizing: border-box;
         }
 
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-            align-items: center;
-            width: 100%;
-            height: 10vh;
-            background-color: red;
-        }
 
-        .achor {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
 
-        .achor a {
-            text-decoration: none;
-            color: black;
-            font-weight: 600;
-            font-family: sans-serif;
-        }
+        .banner-3 {
 
-        .icon {
-            display: flex;
-            gap: 10px;
-            cursor: pointer;
-        }
-
-        .icon i {
-            color: black;
-            font-size: 1.2rem;
-        }
-
-        .banner {
-            height: 20vh;
-            background-image: url("Project\ imges/banner.jpg");
+            min-height: 200px;
+            background-image: url("Projectimges/banner.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-color: white;
@@ -64,19 +34,25 @@
         }
 
         .banner-content h1 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 400;
         }
 
         .banner-content {
-            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            padding: 60px 0;
             text-align: center;
             color: black;
 
         }
 
         .banner-content span {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 400;
         }
 
         .banner-content a {
@@ -84,62 +60,266 @@
             color: black;
         }
 
+        /* ---------------contactus---- */
         .contact {
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            /* align-content: center;
-            justify-items: flex-start;
-            gap: 10px; */
-            max-width: 1300px;
+            /* justify-items: center; */
+            align-content: center;
+
+            max-width: 1200px;
             margin: 0px auto;
             padding: 60px 20px;
+        }
+
+        /* ---------------form-- */
+        .form-area {
+            width: 100%;
+            height: auto;
+            background: #F5F5F5;
+            padding: 15px 20px;
+            margin-left: 20px;
+        }
+
+
+
+        .form-grup {
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+
+        }
+
+        .form-grup label {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            /* padding: 10px; */
+
+        }
+
+        .form-grup input {
+            width: 50%;
+            padding: 6px 10px;
+            margin-bottom: 15px;
+        }
+
+        .checckbox {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center
+        }
+
+        .checckbox p {
+            padding-top: 14px;
+            padding-left: 10px;
+        }
+
+        .sub {
+            width: 20%;
+            margin-top: 15px;
+            color: white;
+            background-color: black;
+            border: none;
+            padding: 6px;
+            border-radius: 5px;
+            font-weight: 400;
+        }
+
+        .form-grup textarea {
+            height: 20vh;
+        }
+
+        .address-icon {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            padding: 20px 20px 70px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ---------------------icon--------- */
+        .map h3 {
+            font-size: 1rem;
+            color: #666666;
+            margin: 0px;
+        }
+
+        .map a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .map p {
+            margin: 0px;
+        }
+
+        .map i {
+            width: 30%;
+            padding: 15px;
+            background-color: aqua;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            margin-right: 15px;
         }
     </style>
 </head>
 
 <body>
-    <div class="nav">
-        <div class="logo"><img src="Project imges/logo.svg" height="25px" alt=""></div>
+    <div class="nav" id="#">
+        <div class="logo"><img src="Projectimges/logo.jpg" height="30px" alt=""></div>
         <div class="achor">
-            <a href="">Home</a>
-            <a href="">Page</a>
+            <a href="index.html">Home</a>
+            <a href="product-details.html">Page</a>
             <a href="">Categories</a>
             <a href="">About Us </a>
-            <a href="">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
 
         <div class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-bag-shopping"></i>
         </div>
     </div>
 
-    <div class="banner">
+    <div class="banner-3">
         <div class="banner-content">
             <h1>Contact Us</h1>
-            <a href=""><span>Home \</span></a>
-            <span>Contact Us</span>
+            <div class="navigation">
+
+                <a href=""><span>Home \</span></a>
+                <span>Contact Us</span>
+            </div>
         </div>
     </div>
 
-    <div class="contact">
-        <img src="Project imges/crush-it-why-now-the-time-to-cash-on-your-passion.jpg" alt="">
+    <section class="contact">
+        <div style="width:100%; height:auto;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d362082.791171277!2d66.82594151715808!3d24.86073479337783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f02c38b5cdf%3A0x46fa455a8c5fbe70!2sKarachi!5e0!3m2!1sen!2sPK!4v1733780000000!5m2!1sen!2sPK"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
         <div class="form-area">
             <h2>Get In Touch With Us</h2>
             <p>If you wish to directly reach us, Please fill out the form below -</p>
-            <form>
-                <input type="text" placeholder="Enter Your Name">
-                <input type="email" placeholder="Enter Your Email">
-                <input type="file" name="" id="">
-                <textarea name="" id=""></textarea>
-                <input type="submit" value="">
+            <form class="form-field">
+                <div class="form-grup">
+                    <label for="">Subject</label>
+                    <input class="form-control" type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="form-grup">
+                    <label for="">Email</label>
+                    <input class="form-control" type="email" placeholder="Enter Your Email">
+
+                </div>
+                <div class="form-grup">
+                    <label for="">Attachment</label>
+                    <input class="form-control" type="file" name="" id="">
+                </div>
+                <div class="form-grup">
+                    <label for="">Message</label>
+                    <textarea class="form-control mb-3" name="" id="" placeholder="How can we help you? "></textarea>
+                </div>
+                <div class="checckbox">
+                    <input type="checkbox">
+                    <p>I agree to the terms and conditions and the privacy policy</p>
+                </div>
+                <input class="sub" type="submit" value="SUBMIT">
             </form>
         </div>
-    </div>
+    </section>
+    <section class="address-icon">
+        <div class="map d-flex align-items-center ">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>50-UTC, Beside Orange Hospital</p>
+        </div>
+        <div class="map d-flex align-items-center">
+            <i class="fa-solid fa-phone "></i>
+            <div class="phone-text">
+                <h3>Call us :</h3>
+                <a href="">+00 123-456-789</a>
 
+            </div>
+        </div>
+        <div class="map d-flex align-items-center">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="ail-text">
+                <h3>Mail us :</h3>
+                <a href="">demo@example.com</a>
+            </div>
+
+        </div>
+        <div class="map d-flex align-items-center">
+            <i class="fa-solid fa-clock"></i>
+            <div class="clock-text">
+                <h3>Open time :</h3>
+                <p>10:00AM – 6:00PM</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="foot-area">
+            <div class=" logo">
+                <img src="Projectimges/2logo.png" height="30px" alt="">
+                <p class="my-4 pe-3 fw-bold">1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p>
+                <!-- <a href="">Show on Map</a> -->
+                <div class="iconn">
+                    <i class="fa-brands fa-facebook-f   "></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube pe-4"></i>
+                </div>
+            </div>
+            <div class="foot-col one">
+                <h3>Need Help</h3>
+                <a href="" class="text-light fs-5 fw-normal"><i class="fa-solid fa-phone"></i>(+84)-1800-33358</a>
+                <p class="">Monday – Friday: 9:00-20:00 <br>Saturday: 11:00 – 15:00</p>
+                <a href="" class="fw-normal text-secondary fw-normal"><i
+                        class="fa-solid fa-envelope"></i>demo@gmail.com</a>
+            </div>
+            <div class="foot-col two">
+                <h3>My Account</h3>
+                <a href="">My Account</a>
+                <a href="">Contact</a>
+                <a href="">Shopping Cart</a>
+                <a href="">Shop</a>
+
+            </div>
+            <div class="foot-col three">
+                <h3>Information</h3>
+                <a href="">Help Center</a>
+                <a href="">Return Product</a>
+                <a href="">Recalls</a>
+                <a href="">Accesibility</a>
+                <a href="">Contact Us</a>
+                <a href="">Store Pickup</a>
+            </div>
+            <div class="foot-col four">
+                <h3>Categories</h3>
+                <a href="">Action</a>
+                <a href="">Comedy</a>
+                <a href="">Drama</a>
+                <a href="">Kidz</a>
+                <a href="">Horror</a>
+                <a href="">Romentic</a>
+            </div>
+        </div>
+        <hr>
+        <div class="copy">
+            <p>Copyright &copy; 2021 Bookery.All Right Reserved.</p>
+            <img src="Projectimges/pay.png" height="25px" alt="">
+        </div>
+        <div class="fixed-but">
+            <a href="#"><i class="fa-solid fa-angles-up text-light"></i></a>
+        </div>
+    </div>
 </body>
 
 </html>
