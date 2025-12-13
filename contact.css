@@ -1,0 +1,184 @@
+     * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .banner-3 {
+
+            min-height: 200px;
+            background-image: url("Projectimges/banner.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: white;
+            background-size: cover;
+        }
+
+        .banner-content h1 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .banner-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            padding: 60px 0;
+            text-align: center;
+            color: black;
+
+        }
+
+        .banner-content span {
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        .banner-content a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* ---------------contactus---- */
+        .contact {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+            align-content: center;
+
+            max-width: 1100px;
+            margin: 0px auto;
+            padding: 60px 20px;
+        }
+
+        @media (max-width:600px) {
+            .contact{
+ display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-content: center;
+        gap: 15px;
+            }
+        }
+        /* ---------------form-- */
+        .form-area {
+            width: 100%;
+            height: auto;
+            background: #F5F5F5;
+            padding: 15px 20px;
+            margin-left: 20px;
+        }
+
+
+
+        .form-grup {
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+
+        }
+
+        .form-grup label {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            /* padding: 10px; */
+
+        }
+
+        .form-grup input {
+            width: 50%;
+            padding: 6px 10px;
+            margin-bottom: 15px;
+        }
+
+        .checckbox {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center
+        }
+
+        .checckbox p {
+            padding-top: 14px;
+            padding-left: 10px;
+        }
+
+        .sub {
+            width: 20%;
+            margin-top: 15px;
+            color: white;
+            background-color: black;
+            border: none;
+            padding: 6px;
+            border-radius: 5px;
+            font-weight: 400;
+        }
+
+        .form-grup textarea {
+            height: 20vh;
+        }
+
+        .address-icon {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            padding: 20px 20px 70px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+@media (max-width:900px) {
+    .address-icon {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-content: center;
+        gap: 15px;
+    }
+}
+@media (max-width:600px) {
+    .address-icon {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-content: center;
+        gap: 15px;
+    }
+}
+        /* ---------------------icon--------- */
+        .map h3 {
+            font-size: 1rem;
+            color: #666666;
+            margin: 0px;
+        }
+
+        .map {
+            background-color: #F0F0F0;
+            width: 100;
+            padding: 20px 30px;
+        }
+
+        .map a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        .map p {
+            margin: 0px;
+            font-size: 14px
+        }
+
+        .map i {
+            width: 30%;
+            padding: 15px;
+            border: 1px solid #F65D4E;
+            color: #F65D4E;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
