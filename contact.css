@@ -182,3 +182,9 @@
             border-radius: 50%;
             margin-right: 15px;
         }
+        .para{
+            width: 140px;
+        }
+        .address-icon a{
+            font-size: 0.8rem;
+        }

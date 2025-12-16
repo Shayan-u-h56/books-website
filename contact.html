@@ -22,8 +22,8 @@
 </head>
 
 <body>
-   <div class="nav" id="#">
-        <div class="logo"><img src="Projectimges/logo.jpg" height="30px" alt=""></div>
+    <div class="nav" id="#">
+        <div class="logo "><img src="Projectimges/logo.jpg" height="30px" alt=""></div>
         <div class="achor">
             <a href="index.html">Home</a>
             <a href="product-details.html">Page</a>
@@ -32,8 +32,8 @@
                 <div class="dropdown-content">
                     <a href="notebooks.html">Notebooks</a>
                     <a href="diaries.html">Diaries</a>
-                    <a href="sketchbooks.html">Sketchbooks</a>
-                    <a href="planners.html">Planners</a>
+                     <a href="books.html">Books</a>
+                    <a href="Journal.html">Journal</a>
                 </div>
             </div>
             <a href="">About Us </a>
@@ -73,11 +73,11 @@
             <form class="form-field">
                 <div class="form-grup">
                     <label for="">Subject</label>
-                    <input class="form-control" type="text" placeholder="Enter Your Name">
+                    <input class="form-control" type="text" placeholder="Enter Your Name" pattern="[A-Za-z ]+" required>
                 </div>
                 <div class="form-grup">
                     <label for="">Email</label>
-                    <input class="form-control" type="email" placeholder="Enter Your Email">
+                    <input class="form-control" type="email" placeholder="Enter Your Email" pattern=" [a-z0-9._%+-]+@" required>
 
                 </div>
                 <div class="form-grup">
@@ -86,10 +86,10 @@
                 </div>
                 <div class="form-grup">
                     <label for="">Message</label>
-                    <textarea class="form-control mb-3" name="" id="" placeholder="How can we help you? "></textarea>
+                    <textarea class="form-control mb-3" name="" id="" placeholder="How can we help you? " required></textarea>
                 </div>
                 <div class="checckbox">
-                    <input type="checkbox">
+                    <input type="checkbox" required>
                     <p>I agree to the terms and conditions and the privacy policy</p>
                 </div>
                 <input class="sub" type="submit" value="SUBMIT">
@@ -97,15 +97,15 @@
         </div>
     </section>
     <section class="address-icon">
-        <div class="map d-flex align-items-center ">
+        <div class="map d-flex align-items-center">
             <i class="fa-solid fa-location-dot py-3 px-1"></i>
-            <p>50-UTC, Beside Orange Hospital</p>
+            <p class="para">50-UTC, Beside Orange Hospital</p>
         </div>
         <div class="map d-flex align-items-center">
             <i class="fa-solid fa-phone "></i>
             <div class="phone-text">
                 <h3>Call us :</h3>
-                <a href="">+00 123-456-789</a>
+                <a href="" >+00 123-456-789</a>
 
             </div>
         </div>

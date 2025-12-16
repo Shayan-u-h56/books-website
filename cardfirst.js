@@ -1,4 +1,4 @@
-const firstcard = [
+let firstcard = [
     {
         "bookcate": "FANTASY",
         "boookname": "The Classic Harry Potter Series",
@@ -63,7 +63,7 @@ for (let i = 0; i < firstcard.length; i++) {
 // -------------------------------------------secondcard--------------------------------------------------------------------------------
 
 
-const secondcard = [
+let secondcard = [
     {
         "bookcate": "FANTASY",
         "boookname": "The Classic Harry Potter Series",
@@ -177,7 +177,7 @@ for (let i = 0; i < secondcard.length; i++) {
 // -------------------------------------------------------------thirdcard------------------------------------------
 
 
-const thirdcard = [
+let thirdcard = [
     {
         "bookcate": "FANTASY",
         "boookname": "The Classic Harry Potter Series",

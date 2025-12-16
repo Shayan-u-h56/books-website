@@ -24,8 +24,9 @@
  }
 
  .card-type-three img {
-
-     border-radius: 15px;
+     object-fit: cover;
+     height: 368px;
+     border-radius: 20px;
  }
 
  .tet-sec-two {
@@ -63,11 +64,13 @@
  .ellip-twwo:hover {
      color: #F65D4E;
  }
-.nextpage{
-    padding-bottom: 70px;
-}
+
+ .nextpage {
+     padding-bottom: 70px;
+ }
+
  .nextpage a {
-color: black;
+     color: black;
      text-decoration: none;
      padding: 0 10px;
      font-weight: 500;

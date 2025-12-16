@@ -1,4 +1,4 @@
-const procard = [
+let procard = [
     {
         "bookcate": "COMEDY",
         "boookname": "The Desolations of Devil's Acre",
@@ -7,60 +7,61 @@ const procard = [
 
     },
     {
-        "bookcate": "COMEDY",
-        "boookname": "The Overstory (Pulitzer Prize Winner)",
-        "imageUrl": "Projectimges/image6.jpg",
-        "price": "$16.90"
+        "bookcate": "Lock Diary",
+        "boookname": "Secure personal thoughts inside",
+        "imageUrl": "Projectimges/diaries1.webp",
+        "price": "$15"
 
     },
     {
-        "bookcate": "CRIME",
-        "boookname": "The Four Winds",
-        "imageUrl": "Projectimges/image7.jpg",
-        "price": "$11.90"
+        "bookcate": "Ruled Notebook",
+        "boookname": "Clean lines neat writing",
+        "imageUrl": "Projectimges/nb2.jpg",
+        "price": "$5.90"
 
     },
     {
-        "bookcate": "CRIME",
-        "boookname": "The Midnight Library",
-        "imageUrl": "Projectimges/image8.jpg",
-        "price": "$11.90"
-
-    },
-        {
         "bookcate": "COMEDY",
         "boookname": "The Desolations of Devil's Acre",
-        "imageUrl": "Projectimges/image5.jpg",
+        "imageUrl": "Projectimges/image11.jpg",
         "price": "$6.00"
+        
+    },
+    {
+        "bookcate": "Plain Notebook",
+        "boookname": "Sketch write anything freely",
+        "imageUrl": "Projectimges/nb3.jpg",
+        "price": "$8.90"
 
     },
     {
-        "bookcate": "COMEDY",
-        "boookname": "The Overstory (Pulitzer Prize Winner)",
-        "imageUrl": "Projectimges/image6.jpg",
-        "price": "$16.90"
+        "bookcate": "Hardcover Notebook",
+        "boookname": "TStrong cover durable pages",
+        "imageUrl": "Projectimges/nb10.jpg",
+        "price": "$11.90"
 
     },
     {
         "bookcate": "CRIME",
         "boookname": "The Midnight Library",
-        "imageUrl": "Projectimges/image8.jpg",
+        "imageUrl": "Projectimges/image2.jpg",
         "price": "$11.90"
 
     },
-        {
-        "bookcate": "COMEDY",
-        "boookname": "The Desolations of Devil's Acre",
-        "imageUrl": "Projectimges/image5.jpg",
+    {
+        "bookcate": "Daily Life Diary",
+        "boookname": "The DeWrite your daily memories",
+        "imageUrl": "Projectimges/diaries5.jpg",
         "price": "$6.00"
 
     },
 ]
 
-
-for (let i = 0; i <procard.length; i++) {
-document.getElementById("repeatfour").innerHTML +=
-`  <div class="card-type-three">
+let productonecon=document.getElementById("product-one")
+if(productonecon){
+for (let i = 0; i < procard.length; i++) {
+   productonecon.innerHTML +=
+        `  <div class="card-type-three">
                 <a href=""><img src="${procard[i].imageUrl}" class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
                     <a href="" class="h3 m-0">${procard[i].bookcate}</a>
@@ -75,11 +76,11 @@ document.getElementById("repeatfour").innerHTML +=
                     <h2>${procard[i].price}</h2>
                 </div>
             </div>`
-    
-}
 
+}
+}
 // ---------------------------------------productsecondpage------------
-const producttwo=[
+let producttwo = [
     {
         "bookcate": "FANTASY",
         "boookname": "The Classic Harry Potter Series",
@@ -88,35 +89,68 @@ const producttwo=[
 
     },
     {
-        "bookcate": "LITTERATURE",
-        "boookname": "They Both Die at the End",
+        "bookcate": "COMEDY",
+        "boookname": "The Song of Achilles",
         "imageUrl": "Projectimges/image2.jpg",
+        "price": "$11.90"
+        
+    },
+    {
+        "bookcate": "Pocket Diary",
+        "boookname": "Small size carry anywhere",
+        "imageUrl": "Projectimges/diaries11.jpg",
         "price": "$11.90"
 
     },
     {
-        "bookcate": "COMEDY",
-        "boookname": "The Song of Achilles",
-        "imageUrl": "Projectimges/image3.jpg",
+        "bookcate": "College Notebook",
+        "boookname": "Ideal for students notes",
+        "imageUrl": "Projectimges/nb7.jpg",
+        "price": "$11.90"
+
+    },
+    {
+        "bookcate": "Diary",
+        "boookname": "Small size carry anywhere",
+        "imageUrl": "Projectimges/diaries7.jpg",
         "price": "$11.90"
 
     },
     {
         "bookcate": "COMEDY",
         "boookname": "The Sanatorium",
-        "imageUrl": "Projectimges/image4.jpg",
+        "imageUrl": "Projectimges/image15.jpg",
+        "price": "$11.90"
+
+    },
+    {
+        "bookcate": "College Notebook",
+        "boookname": "Ideal for students notes",
+        "imageUrl": "Projectimges/nb1.jpg",
+        "price": "$11.90"
+
+    },
+    {
+        "bookcate": "COMEDY",
+        "boookname": "The Sanatorium",
+        "imageUrl": "Projectimges/image16.jpg",
         "price": "$11.90"
 
     },
 ]
+
+let productcontainer= document.getElementById("product-two")
+if(productcontainer){
+
+
 for (let i = 0; i < producttwo.length; i++) {
-document.getElementById("seccardtwo").innerHTML +=
-` <div class="card-type-three">
-                <a href=""><img src="${producttwo[i].imageUrl}" class="img-fluid" alt=""></a>
+   productcontainer.innerHTML +=
+        ` <div class="card-type-three">
+                <a href=""><img src="${producttwo[i].imageUrl}"class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
                     <a href="" class="h3 m-0">${producttwo[i].bookcate}</a>
                     <a href="" class="ellip-twwo mb-2">${producttwo[i].boookname}</a>
-                    <div class="rate ">
+                    <div class="rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -127,8 +161,8 @@ document.getElementById("seccardtwo").innerHTML +=
                 </div>
             </div>
             `
-    
+
 }
 
-
+}
 
