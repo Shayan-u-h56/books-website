@@ -4,73 +4,73 @@
 
 let journalcard = [
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j1.jpg",
         name: "Classic Leather Journal",
         description: "Premium quality leather journal for daily writing and notes.",
         price: "$15"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j2.jpg",
         name: "Spiral Notebook",
         description: "Smooth paper spiral notebook perfect for students and office use.",
         price: "$8"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j14.jpg",
         name: "Hardcover Diary",
         description: "Stylish hardcover diary to keep your personal thoughts safe.",
         price: "$12"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j3.jpg",
         name: "Minimal Planner",
         description: "Simple and clean planner for organizing your daily tasks.",
         price: "$10"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j13.jpg",
         name: "Vintage Journal",
         description: "Vintage-style journal with antique design and thick pages.",
         price: "$18"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j11.jpg",
         name: "Sketch Notebook",
         description: "High-quality sketch notebook for artists and designers.",
         price: "$14"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j16.jpg",
         name: "Daily Notes Pad",
         description: "Lightweight notes pad for quick ideas and reminders.",
         price: "$6"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j8.jpg",
         name: "Executive Notebook",
         description: "Professional notebook ideal for meetings and office work.",
         price: "$20"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j4.jpg",
         name: "Travel Journal",
         description: "Compact travel journal to capture memories on the go.",
         price: "$16"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j5.jpg",
         name: "Eco Friendly Notebook",
         description: "Made from recycled paper, perfect for eco-conscious users.",
         price: "$11"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j19.jpg",
         name: "Pocket Size Journal",
         description: "Small and handy journal, easy to carry anywhere.",
         price: "$7"
     },
     {
-        img: "Projectimges/image4.jpg",
+        img: "Projectimges/j12.jpg",
         name: "Luxury Writing Journal",
         description: "Elegant luxury journal with premium paper quality.",
         price: "$25"
@@ -83,7 +83,7 @@ if (journalContainer) {
     for (let i = 0; i < journalcard.length; i++) {
         journalContainer.innerHTML += `
             <div class="card-type-three">
-                <a href=""><img src="${journalcard[i].img}" class="img-fluid" alt=""></a>
+                <a href=""><img  style="height:270px; width:230px; object-fit:cover; background-color:lightgray;" src="${journalcard[i].img}" class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
                     <a href="" class="h3 m-0">${journalcard[i].name}</a>
                     <a href="" class="ellip-twwo mb-2">${journalcard[i].description}</a>
@@ -284,9 +284,9 @@ let notebookcard = [
 ]
 
 let notebookContainer = document.getElementById("notebookid");
-if (notebookContainer ) {
+if (notebookContainer) {
     for (let i = 0; i < notebookcard.length; i++) {
-        notebookContainer .innerHTML += `
+        notebookContainer.innerHTML += `
             <div class="card-type-three">
                 <a href=""><img src="${notebookcard[i].img}" class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
@@ -308,7 +308,7 @@ if (notebookContainer ) {
 
 // ------------------------------book------------------------------------
 
-let bookscard=[
+let bookscard = [
     {
         "bookcate": "FANTASY",
         "boookname": "The Classic Harry Potter Series",

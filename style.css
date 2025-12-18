@@ -16,6 +16,7 @@
       padding: 0 40px;
       width: 100%;
       height: 10vh;
+    
       background-color: #FFFFFF;
   }
 
@@ -50,6 +51,11 @@
       }
   }
 
+.logo1 img{
+ max-height: 80px;
+    width: 140px;
+    object-fit: cover;
+}
   .achor {
       display: flex;
       align-items: center;
@@ -330,8 +336,11 @@
   .foot-area p {
       color: gray;
 
-  }
-
+    }
+    
+.foot-col i{
+font-size: 0.6rem;
+}
   .foot-col.one i {
       color: #F65D4E;
       font-size: 20px;
@@ -1408,6 +1417,6 @@
       font-size: 2.5rem;
       min-width: 35%;
       color: #F65D4E;
-      border: 2px solid #ff5500;
+      border: 2px solid #F65D4E;
 
   }

@@ -2,7 +2,7 @@ let procard = [
     {
         "bookcate": "COMEDY",
         "boookname": "The Desolations of Devil's Acre",
-        "imageUrl": "Projectimges/image5.jpg",
+        "imageUrl": "Projectimges/image15.jpg",
         "price": "$6.00"
 
     },
@@ -16,7 +16,7 @@ let procard = [
     {
         "bookcate": "Ruled Notebook",
         "boookname": "Clean lines neat writing",
-        "imageUrl": "Projectimges/nb2.jpg",
+        "imageUrl": "Projectimges/nb1.jpg",
         "price": "$5.90"
 
     },
@@ -119,14 +119,14 @@ let producttwo = [
     {
         "bookcate": "COMEDY",
         "boookname": "The Sanatorium",
-        "imageUrl": "Projectimges/image15.jpg",
+        "imageUrl": "Projectimges/image5.jpg",
         "price": "$11.90"
 
     },
     {
         "bookcate": "College Notebook",
         "boookname": "Ideal for students notes",
-        "imageUrl": "Projectimges/nb1.jpg",
+        "imageUrl": "Projectimges/nb2.jpg",
         "price": "$11.90"
 
     },

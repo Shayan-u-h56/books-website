@@ -16,7 +16,33 @@
      max-width: 1200px;
      margin: 0 auto;
  }
+ @media (max-width:1000px) {
+       .product-cator-page {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-items: center;
+          align-content: center;
+      }
+  }
 
+  @media (max-width:770px) {
+      .product-cator-page {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-items: center;
+          align-content: center;
+      }
+
+  }
+
+  @media (max-width:450px) {
+      .product-cator-page {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          justify-items: center;
+          align-content: center;
+      }
+    }
  .card-type-three {
      width: 260px;
      height: auto;
