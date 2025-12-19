@@ -7,25 +7,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="contact.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
+    <title>Title</title>
+    <style>
+        .About {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            gap: 20px;
+            align-content: center;
+            max-width: 1100px;
+            margin: 0px auto;
+            padding: 70px 20px;
+
+        }
+
+        .about-images {
+
+            display: flex;
+            object-fit: cover;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .con {
+            width: 100%;
+            padding: 70px 20px;
+        }
+
+        .con a {
+
+            text-decoration: none;
+            background-color: #F65D4E;
+            color: #ffff;
+            font-weight: 600;
+            padding: 12px 25px;
+        }
+
+        .con a:hover {
+            transition: 0.2s ease;
+            background-color: black;
+        }
+    </style>
 </head>
 
 <body>
- <div class="nav navbar navbar-expand-lg " id="#">
+    <div class="nav navbar navbar-expand-lg " id="#">
         <div class="logo1 "><img src="Projectimges/logo4.png" class="img-fluid" alt=""></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-             <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
         </button>
-        <div class="achor collapse navbar-collapse w-100" id="navbarNav" >
+        <div class="achor collapse navbar-collapse w-100" id="navbarNav">
             <a href="index.html">Home</a>
             <a href="product.html">Products</a>
 
@@ -50,28 +92,55 @@
         </div>
     </div>
 
-  <div class="banner-3">
+    <div class="banner-3">
         <div class="banner-content">
-            <h1>Products</h1>
+            <h1>About Us</h1>
             <div class="navigation">
 
                 <a href="index.html"><span>Home \</span></a>
-                <span>products</span>
+                <span>About Us</span>
             </div>
         </div>
     </div>
-    
-    <section class="container-fluid categorie-product">
-        <div class="product-cator-page" id="product-one"></div>
-        <div class="nextpage text-center">
-            <p>Showing 1-12 of 19 item(s)</p>
-            <a href="product.html">1</a>
-            <a href="product-2.html">2</a>
-            <a href="product-2.html"><i class="fa-solid fa-arrow-right"></i></a>
+    <section class="container-fluid About">
+        <div class="about-images">
+            <img src="Projectimges/about-page-01.jpg" height="400px" alt="">
+            <img src="Projectimges/about-page-04.jpg" height="400px" alt="">
+        </div>
+        <div class="cont">
+            <h1 class="mb-3 text-center">Ryana Calenders</h1>
+            <p>Welcome to Ryana Calenders
+                Ryana Calenders is a books and stationery brand dedicated to bringing quality, creativity, and elegance
+                into your daily life. We believe that books are more than just pages—they are vessels of knowledge,
+                imagination, and inspiration. Every item we offer is designed to transform the simple act of reading,
+                writing, or planning into a meaningful and enjoyable experience that sparks ideas and encourages
+                learning.</p>
+
+            <h3>Our Products</h3>
+            <p>From calendars, journals, notebooks, and diaries to everyday study and office essentials, our products
+                are carefully crafted with attention to detail, premium materials, and modern aesthetics. Each product
+                is not only functional but also stylish, making your workspace or study area look organized and
+                inviting. We focus on providing tools that enhance productivity while reflecting personal style and
+                creativity.</p>
+
+            <h3>Who We Serve</h3>
+            <p>Whether you are a student managing your academic life, a professional balancing work and planning, or a
+                creative reader seeking inspiration, Ryana Calenders is here to support your journey. Our wide range of
+                products caters to all ages and needs, helping you stay organized, motivated, and inspired every single
+                day. We aim to create a positive and productive experience for every individual who interacts with our
+                brand.</p>
+
+            <h3>Our Mission</h3>
+            <p> Our mission is to provide stylish, durable, and affordable books and stationery that empower learning,
+                creativity, and growth. We believe that every page tells a story, and our goal is to help you write
+                yours in the most meaningful way. At Ryana Calenders, we are committed to offering high-quality products
+                that make everyday life more organized, enjoyable, and inspiring.</p>
         </div>
     </section>
-
-  <div class="footer">
+    <section class="text-center con">
+        <a href="contact.html">CLICK HERE TO CONTACT US</a>
+    </section>
+    <div class="footer">
         <div class="foot-area">
             <div class=" logo">
                 <div class="lo1" style="margin-right: 40px;"><img src="Projectimges/logo3.png"
@@ -129,9 +198,6 @@
             <a href="#"><i class="fa-solid fa-angles-up text-light"></i></a>
         </div>
     </div>
-    <script src="productcard.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
