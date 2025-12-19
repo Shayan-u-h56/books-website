@@ -16,11 +16,10 @@
       padding: 0 40px;
       width: 100%;
       height: 10vh;
-    
       background-color: #FFFFFF;
   }
 
-  @media (max-width:800px) {
+  /* @media (max-width:800px) {
 
       .nav .achor {
           display: flex;
@@ -39,23 +38,34 @@
       .nav .icon i {
           font-size: 0.8rem;
       }
-  }
+  } */
 
   @media (max-width:600px) {
-      .nav .achor {
-          display: none;
-      }
 
       .nav .icon {
           display: none;
       }
+
+      .nav .achor {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: #FFFFFF;
+          height: 300px;
+          padding: 10px;
+          position: absolute;
+          top: 65px;
+          left: 0px;
+      }
+
   }
 
-.logo1 img{
- max-height: 80px;
-    width: 140px;
-    object-fit: cover;
-}
+  .logo1 img {
+      max-height: 80px;
+      width: 220px;
+      object-fit: cover;
+  }
+
   .achor {
       display: flex;
       align-items: center;
@@ -336,11 +346,12 @@
   .foot-area p {
       color: gray;
 
-    }
-    
-.foot-col i{
-font-size: 0.6rem;
-}
+  }
+
+  .foot-col i {
+      font-size: 0.6rem;
+  }
+
   .foot-col.one i {
       color: #F65D4E;
       font-size: 20px;

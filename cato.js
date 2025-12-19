@@ -83,10 +83,10 @@ if (journalContainer) {
     for (let i = 0; i < journalcard.length; i++) {
         journalContainer.innerHTML += `
             <div class="card-type-three">
-                <a href=""><img  style="height:270px; width:230px; object-fit:cover; background-color:lightgray;" src="${journalcard[i].img}" class="img-fluid" alt=""></a>
+                <a href="product-details-4.html"><img  style="height:270px; width:230px; object-fit:cover; background-color:lightgray;" src="${journalcard[i].img}" class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
                     <a href="" class="h3 m-0">${journalcard[i].name}</a>
-                    <a href="" class="ellip-twwo mb-2">${journalcard[i].description}</a>
+                    <a href="product-details-4.html" class="ellip-twwo mb-2">${journalcard[i].description}</a>
                     <div class="rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -187,10 +187,10 @@ if (diariesContainer) {
     for (let i = 0; i < diariescard.length; i++) {
         diariesContainer.innerHTML += `
             <div class="card-type-three">
-                <a href=""><img src="${diariescard[i].img}" class="img-fluid" alt=""></a>
+                <a href="product-details-2.html"><img src="${diariescard[i].img}" class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
                     <a href="" class="h3 m-0">${diariescard[i].name}</a>
-                    <a href="" class="ellip-twwo mb-2">${diariescard[i].description}</a>
+                    <a href="product-details-2.html" class="ellip-twwo mb-2">${diariescard[i].description}</a>
                     <div class="rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -288,10 +288,10 @@ if (notebookContainer) {
     for (let i = 0; i < notebookcard.length; i++) {
         notebookContainer.innerHTML += `
             <div class="card-type-three">
-                <a href=""><img src="${notebookcard[i].img}" class="img-fluid" alt=""></a>
+                <a href="product-details-3.html"><img src="${notebookcard[i].img}" class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
                     <a href="" class="h3 m-0">${notebookcard[i].name}</a>
-                    <a href="" class="ellip-twwo mb-2">${notebookcard[i].description}</a>
+                    <a href="product-details-3.html" class="ellip-twwo mb-2">${notebookcard[i].description}</a>
                     <div class="rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -401,10 +401,10 @@ if (booksContainer) {
     for (let i = 0; i < bookscard.length; i++) {
         booksContainer.innerHTML += `
             <div class="card-type-three">
-                <a href=""><img src="${bookscard[i].imageUrl}" class="img-fluid" alt=""></a>
+                <a href="product-details.html"><img src="${bookscard[i].imageUrl}" class="img-fluid" alt=""></a>
                 <div class="card-body tet-sec-two">
                     <a href="" class="h3 m-0">${bookscard[i].bookcate}</a>
-                    <a href="" class="ellip-twwo mb-2">${bookscard[i].boookname}</a>
+                    <a href="product-details.html" class="ellip-twwo mb-2">${bookscard[i].boookname}</a>
                     <div class="rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>

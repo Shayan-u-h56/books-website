@@ -40,10 +40,10 @@ for (let i = 0; i < firstcard.length; i++) {
     document.getElementById("repeatone").innerHTML +=
 
         ` <div class="card">
-                <a href=""><img src="${firstcard[i].imageUrl}" alt=""></a>
+                <a href="product-details.html"><img src="${firstcard[i].imageUrl}" alt=""></a>
                 <div class="card-body ">
                     <a href="" class="h2 ">${firstcard[i].bookcate}</a>
-                    <a href="" class="ellip ">${firstcard[i].boookname}</a>
+                    <a href="product-details.html" class="ellip ">${firstcard[i].boookname}</a>
                     <div class="rate ">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -154,11 +154,11 @@ for (let i = 0; i < secondcard.length; i++) {
     document.getElementById("repeattwo").innerHTML +=
 
         ` <div class="card-type-two">
-                <a href=""><img src="${secondcard[i].imageUrl}" class="img-fluid"
+                <a href="product-details.html"><img src="${secondcard[i].imageUrl}" class="img-fluid"
                         alt=""></a>
                 <div class="card-body tet-sec">
                     <a href="" class="h3">${secondcard[i].bookcate}</a>
-                    <a href="" class="ellip-two ">${secondcard[i].boookname}</a>
+                    <a href="product-details.html" class="ellip-two ">${secondcard[i].boookname}</a>
                     <div class="rate ">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -241,11 +241,11 @@ for (let i = 0; i < thirdcard.length; i++) {
     document.getElementById("repeatthree").innerHTML +=
 
         ` <div class="card-type-two">
-                <a href=""><img src="${secondcard[i].imageUrl}" class="img-fluid"
+                <a href="product-details.html"><img src="${secondcard[i].imageUrl}" class="img-fluid"
                         alt=""></a>
                 <div class="card-body tet-sec">
                     <a href="" class="h3">${secondcard[i].bookcate}</a>
-                    <a href="" class="ellip-two ">${secondcard[i].boookname}</a>
+                    <a href="product-details.html" class="ellip-two ">${secondcard[i].boookname}</a>
                     <div class="rate ">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
