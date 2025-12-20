@@ -115,16 +115,21 @@
          width: 20%;
          margin-top: 15px;
          color: white;
-         background-color: black;
+         background-color: #F65D4E;
          border: none;
          padding: 6px;
          border-radius: 5px;
          font-weight: 400;
      }
 
+     .sub:hover {
+         transition: 0.2s ease;
+         background-color: black;
+     }
+
      .form-grup textarea {
          height: 20vh;
-           border: 1px solid gray;
+         border: 1px solid gray;
      }
 
      .address-icon {
